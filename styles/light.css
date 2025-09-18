@@ -1,12 +1,88 @@
-/*
-  Специально для светлой темы при наличии класса.
-  Здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
 
+/* === Принудительно светлая тема === */
 :root.theme-light {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+  --page-bg-image: url("../images/cover-image-light.png");
+  --color-bg-page: #FFF1F7;    /* светлый фон */
+  --accent-color:  #FF8DCB;    /* розовый акцент, тени, уголки */
+  --color-title:   #FFC2E6;    /* крупные заголовки */
+  --color-text:    #353430;    /* основной текст на светлом */
+  --color-text-dark: #353430;  /* тёмный текст на розовом */
+  --color-card-bg: var(--accent-color);
+
+  --corner-color-light-theme: var(--color-text-dark);
+  --button-color-light-theme: var(--color-text-dark);
+}
+
+
+@media (prefers-color-scheme: light) {
+  :root.theme-auto {
+    --page-bg-image: url("../images/cover-image-light.png");
+    --color-bg-page: #FFF1F7;
+    --accent-color:  #FF8DCB;
+    --color-title:   #FFC2E6;
+    --color-text:    #353430;
+    --color-text-dark: #353430;
+    --color-card-bg: var(--accent-color);
+
+    --corner-color-light-theme: var(--color-text-dark);
+    --button-color-light-theme: var(--color-text-dark);
+  }
+}
+
+
+.theme-light .rec { display: none; }
+@media (prefers-color-scheme: light) {
+  .theme-auto .rec { display: none; }
+}
+
+/* Кнопки переключения тем */
+.theme-light .header__theme-menu-button { color: var(--button-color-light-theme); }
+.theme-light .header__theme-menu-button_active {
+  box-shadow: inset 0 0 0 1px var(--button-color-light-theme);
+  cursor: default;
+}
+.theme-light .header__theme-menu-button:hover:not(.header__theme-menu-button_active) {
+  box-shadow: inset 0 0 0 1px rgba(50,49,45,0.4);
+}
+.theme-light .header__theme-menu-button:focus-visible {
+  outline: none;
+  text-decoration: none;
+  border-bottom: 1px solid var(--button-color-light-theme);
+}
+
+@media (prefers-color-scheme: light) {
+  .theme-auto .header__theme-menu-button { color: var(--button-color-light-theme); }
+  .theme-auto .header__theme-menu-button_active {
+    box-shadow: inset 0 0 0 1px var(--button-color-light-theme);
+    cursor: default;
+  }
+  .theme-auto .header__theme-menu-button:hover:not(.header__theme-menu-button_active) {
+    box-shadow: inset 0 0 0 1px rgba(50,49,45,0.4);
+  }
+  .theme-auto .header__theme-menu-button:focus-visible {
+    outline: none;
+    text-decoration: none;
+    border-bottom: 1px solid var(--button-color-light-theme);
+  }
+}
+
+/* Уголки */
+.theme-light .decorated-zone::before {
+  border-top:   var(--corner-thickness) solid var(--corner-color-light-theme);
+  border-right: var(--corner-thickness) solid var(--corner-color-light-theme);
+}
+.theme-light .decorated-zone::after {
+  border-bottom: var(--corner-thickness) solid var(--corner-color-light-theme);
+  border-left:   var(--corner-thickness) solid var(--corner-color-light-theme);
+}
+
+@media (prefers-color-scheme: light) {
+  .theme-auto .decorated-zone::before {
+    border-top:   var(--corner-thickness) solid var(--corner-color-light-theme);
+    border-right: var(--corner-thickness) solid var(--corner-color-light-theme);
+  }
+  .theme-auto .decorated-zone::after {
+    border-bottom: var(--corner-thickness) solid var(--corner-color-light-theme);
+    border-left:   var(--corner-thickness) solid var(--corner-color-light-theme);
+  }
 }
