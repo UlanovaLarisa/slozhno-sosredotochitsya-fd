@@ -2,7 +2,7 @@
 /* === Принудительно светлая тема === */
 :root.theme-light {
   --page-bg-image: url("../images/cover-image-light.png");
-  --color-bg-page: #FFF1F7;    /* светлый фон */
+  --color-bg-page: #efb5cf;    /* светлый фон */
   --accent-color:  #FF8DCB;    /* розовый акцент, тени, уголки */
   --color-title:   #FFC2E6;    /* крупные заголовки */
   --color-text:    #353430;    /* основной текст на светлом */
@@ -12,7 +12,6 @@
   --corner-color-light-theme: var(--color-text-dark);
   --button-color-light-theme: var(--color-text-dark);
 }
-
 
 @media (prefers-color-scheme: light) {
   :root.theme-auto {
@@ -29,10 +28,22 @@
   }
 }
 
+.theme-light .rec { 
+  display: none; 
+}
 
-.theme-light .rec { display: none; }
+.theme-light .cards .card__heading {
+  color: var(--color-text-dark);
+}
+
+.theme-light .footer__title {
+text-shadow: 2px 2px 0 #FF0070;
+}
+
 @media (prefers-color-scheme: light) {
-  .theme-auto .rec { display: none; }
+  .theme-auto .rec { 
+  display: none; 
+  }
 }
 
 /* Кнопки переключения тем */
@@ -45,9 +56,9 @@
   box-shadow: inset 0 0 0 1px rgba(50,49,45,0.4);
 }
 .theme-light .header__theme-menu-button:focus-visible {
+  border-bottom: 1px solid var(--button-color-light-theme);
   outline: none;
   text-decoration: none;
-  border-bottom: 1px solid var(--button-color-light-theme);
 }
 
 @media (prefers-color-scheme: light) {
@@ -60,10 +71,18 @@
     box-shadow: inset 0 0 0 1px rgba(50,49,45,0.4);
   }
   .theme-auto .header__theme-menu-button:focus-visible {
+    border-bottom: 1px solid var(--button-color-light-theme);
     outline: none;
     text-decoration: none;
-    border-bottom: 1px solid var(--button-color-light-theme);
   }
+  
+  .theme-auto .cards .card__heading {
+  color: var(--color-text-dark);
+  }
+
+  .theme-auto .footer__title {
+  text-shadow: 2px 2px 0 #FF0070;
+}
 }
 
 /* Уголки */
@@ -85,4 +104,6 @@
     border-bottom: var(--corner-thickness) solid var(--corner-color-light-theme);
     border-left:   var(--corner-thickness) solid var(--corner-color-light-theme);
   }
+
 }
+

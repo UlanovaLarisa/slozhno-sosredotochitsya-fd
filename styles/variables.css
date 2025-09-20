@@ -1,16 +1,16 @@
 /*
-  Переменные для вашего проекта
-  и их переопределение под различные устройства
+Переменные для вашего проекта
+и их переопределение под различные устройства
 */
 :root {
   --page-bg-image: url("../images/cover-image-light.png");
-  --page-bg-color: #cb98c6; 
+  --page-bg-color: #cb98c6;
   --min-block-size: 668px;
   --accent-color: #FF0070;
   --corner-size: 25px;
   --corner-thickness: 1px;
   --corner-color-dark-theme: var(--accent-color);
-  --rec-corner-gap: 9px; 
+  --rec-corner-gap: 9px;
   --font-main: 'IBM Plex Mono', monospace;
   --page-pad: 10px;
   --button-color-dark-theme: #FF0070;
@@ -21,8 +21,3 @@
     --page-pad: 20px;
   }
 }
-
-
-
-
-

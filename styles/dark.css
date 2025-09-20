@@ -1,14 +1,27 @@
 /*
-  Специально для тёмной темы при наличии класса,
-  здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
+Специально для тёмной темы при наличии класса,
+здесь окажутся стили, которые нужно переопределить принудительно,
+переключая тему
 */
-
+@media (prefers-color-scheme: dark) {
+  :root.theme-auto {
+    --page-bg-image: url("../images/cover-image-dark.png");
+    --color-bg-page: #000028;
+    --accent-color:  #FF0070;   /* розовый акцент, тени, уголки */
+    --color-title:   #DB00FF;   /* крупные заголовки */
+    --color-text:    #F1B2CE;   /* основной текст на тёмном */
+    --color-text-dark: #000028; /* тёмный текст на розовом */
+    --color-card-bg: var(--accent-color);
+    --font-main: 'IBM Plex mono', monospace;
+    --corner-color-dark-theme: var(--accent-color);
+    --button-color-dark-theme: #FF0070;
+  }
+}
 
 :root.theme-dark {
   /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
+  Так стили написанные ниже будут иметь больший вес,
+  чем стили в медиазапросе предпочтений пользователя
   */
   --page-bg-image: url("../images/cover-image-dark.png");
   /* === Цвета === */
@@ -24,26 +37,3 @@
   --corner-color-dark-theme: var(--accent-color);
   --button-color-dark-theme: #FF0070;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root.theme-auto {
-  --page-bg-image: url("../images/cover-image-dark.png");
-  --color-bg-page: #000028;
-  --accent-color:  #FF0070;   /* розовый акцент, тени, уголки */
-  --color-title:   #DB00FF;   /* крупные заголовки */
-  --color-text:    #F1B2CE;   /* основной текст на тёмном */
-  --color-text-dark: #000028; /* тёмный текст на розовом */
-  --color-card-bg: var(--accent-color);
-  --font-main: 'IBM Plex mono', monospace;
-  --corner-color-dark-theme: var(--accent-color);
-  --button-color-dark-theme: #FF0070;
-  }
-}
-
-
-
-
-
-
-
-
