@@ -16,5 +16,8 @@
     "url": "https://github.com/UlanovaLarisa/slozhno-sosredotochitsya-fd/issues"
   },
   "homepage": "https://github.com/UlanovaLarisa/slozhno-sosredotochitsya-fd#readme",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "prettier": "3.6.2"
+  }
 }

@@ -7,14 +7,14 @@
   :root.theme-auto {
     --page-bg-image: url("../images/cover-image-dark.png");
     --color-bg-page: #000028;
-    --accent-color:  #FF0070;   /* розовый акцент, тени, уголки */
-    --color-title:   #DB00FF;   /* крупные заголовки */
-    --color-text:    #F1B2CE;   /* основной текст на тёмном */
+    --accent-color: #ff0070; /* розовый акцент, тени, уголки */
+    --color-title: #db00ff; /* крупные заголовки */
+    --color-text: #f1b2ce; /* основной текст на тёмном */
     --color-text-dark: #000028; /* тёмный текст на розовом */
     --color-card-bg: var(--accent-color);
-    --font-main: 'IBM Plex mono', monospace;
+    --font-main: "IBM Plex mono", monospace;
     --corner-color-dark-theme: var(--accent-color);
-    --button-color-dark-theme: #FF0070;
+    --button-color-dark-theme: #ff0070;
   }
 }
 
@@ -26,14 +26,14 @@
   --page-bg-image: url("../images/cover-image-dark.png");
   /* === Цвета === */
   --color-bg-page: #000028;
-  --accent-color:  #FF0070;   /* розовый акцент, тени, уголки */
-  --color-title:   #DB00FF;   /* крупные заголовки */
-  --color-text:    #F1B2CE;   /* основной текст на тёмном */
+  --accent-color: #ff0070; /* розовый акцент, тени, уголки */
+  --color-title: #db00ff; /* крупные заголовки */
+  --color-text: #f1b2ce; /* основной текст на тёмном */
   --color-text-dark: #000028; /* тёмный текст на розовом */
   --color-card-bg: var(--accent-color);
 
   /* === Шрифт === */
-  --font-main: 'IBM Plex mono', monospace;
+  --font-main: "IBM Plex mono", monospace;
   --corner-color-dark-theme: var(--accent-color);
-  --button-color-dark-theme: #FF0070;
+  --button-color-dark-theme: #ff0070;
 }

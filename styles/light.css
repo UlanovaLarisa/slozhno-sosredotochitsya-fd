@@ -1,12 +1,11 @@
-
 /* === Принудительно светлая тема === */
 :root.theme-light {
   --page-bg-image: url("../images/cover-image-light.png");
-  --color-bg-page: #efb5cf;    /* светлый фон */
-  --accent-color:  #FF8DCB;    /* розовый акцент, тени, уголки */
-  --color-title:   #FFC2E6;    /* крупные заголовки */
-  --color-text:    #353430;    /* основной текст на светлом */
-  --color-text-dark: #353430;  /* тёмный текст на розовом */
+  --color-bg-page: #efb5cf; /* светлый фон */
+  --accent-color: #ff8dcb; /* розовый акцент, тени, уголки */
+  --color-title: #ffc2e6; /* крупные заголовки */
+  --color-text: #353430; /* основной текст на светлом */
+  --color-text-dark: #353430; /* тёмный текст на розовом */
   --color-card-bg: var(--accent-color);
 
   --corner-color-light-theme: var(--color-text-dark);
@@ -16,10 +15,10 @@
 @media (prefers-color-scheme: light) {
   :root.theme-auto {
     --page-bg-image: url("../images/cover-image-light.png");
-    --color-bg-page: #FFF1F7;
-    --accent-color:  #FF8DCB;
-    --color-title:   #FFC2E6;
-    --color-text:    #353430;
+    --color-bg-page: #fff1f7;
+    --accent-color: #ff8dcb;
+    --color-title: #ffc2e6;
+    --color-text: #353430;
     --color-text-dark: #353430;
     --color-card-bg: var(--accent-color);
     --corner-color-light-theme: var(--color-text-dark);
@@ -27,8 +26,8 @@
   }
 }
 
-.theme-light .rec { 
-  display: none; 
+.theme-light .rec {
+  display: none;
 }
 
 .theme-light .cards .card__heading {
@@ -36,26 +35,27 @@
 }
 
 .theme-light .footer__title {
-text-shadow: 2px 2px 0 #FF0070;
+  text-shadow: 2px 2px 0 #ff0070;
 }
 
 @media (prefers-color-scheme: light) {
-  .theme-auto .rec { 
-  display: none; 
+  .theme-auto .rec {
+    display: none;
   }
 }
 
 /* Кнопки переключения тем */
-.theme-light .header__theme-menu-button { 
-  color: var(--button-color-light-theme); 
+.theme-light .header__theme-menu-button {
+  color: var(--button-color-light-theme);
 }
 
 .theme-light .header__theme-menu-button_active {
   box-shadow: inset 0 0 0 1px var(--button-color-light-theme);
   cursor: default;
 }
-.theme-light .header__theme-menu-button:hover:not(.header__theme-menu-button_active) {
-  box-shadow: inset 0 0 0 1px rgba(50,49,45,0.4);
+.theme-light
+  .header__theme-menu-button:hover:not(.header__theme-menu-button_active) {
+  box-shadow: inset 0 0 0 1px rgba(50, 49, 45, 0.4);
 }
 .theme-light .header__theme-menu-button:focus-visible {
   border-bottom: 1px solid var(--button-color-light-theme);
@@ -64,9 +64,8 @@ text-shadow: 2px 2px 0 #FF0070;
 }
 
 @media (prefers-color-scheme: light) {
-
-  .theme-auto .header__theme-menu-button { 
-    color: var(--button-color-light-theme); 
+  .theme-auto .header__theme-menu-button {
+    color: var(--button-color-light-theme);
   }
 
   .theme-auto .header__theme-menu-button_active {
@@ -74,8 +73,9 @@ text-shadow: 2px 2px 0 #FF0070;
     cursor: default;
   }
 
-  .theme-auto .header__theme-menu-button:hover:not(.header__theme-menu-button_active) {
-    box-shadow: inset 0 0 0 1px rgba(50,49,45,0.4);
+  .theme-auto
+    .header__theme-menu-button:hover:not(.header__theme-menu-button_active) {
+    box-shadow: inset 0 0 0 1px rgba(50, 49, 45, 0.4);
   }
 
   .theme-auto .header__theme-menu-button:focus-visible {
@@ -83,36 +83,35 @@ text-shadow: 2px 2px 0 #FF0070;
     outline: none;
     text-decoration: none;
   }
-  
+
   .theme-auto .cards .card__heading {
-  color: var(--color-text-dark);
+    color: var(--color-text-dark);
   }
 
   .theme-auto .footer__title {
-  text-shadow: 2px 2px 0 #FF0070;
-}
+    text-shadow: 2px 2px 0 #ff0070;
+  }
 }
 
 /* Уголки */
 .theme-light .decorated-zone::before {
-  border-top:   var(--corner-thickness) solid var(--corner-color-light-theme);
+  border-top: var(--corner-thickness) solid var(--corner-color-light-theme);
   border-right: var(--corner-thickness) solid var(--corner-color-light-theme);
 }
 
 .theme-light .decorated-zone::after {
   border-bottom: var(--corner-thickness) solid var(--corner-color-light-theme);
-  border-left:   var(--corner-thickness) solid var(--corner-color-light-theme);
+  border-left: var(--corner-thickness) solid var(--corner-color-light-theme);
 }
 
 @media (prefers-color-scheme: light) {
   .theme-auto .decorated-zone::before {
-    border-top:   var(--corner-thickness) solid var(--corner-color-light-theme);
+    border-top: var(--corner-thickness) solid var(--corner-color-light-theme);
     border-right: var(--corner-thickness) solid var(--corner-color-light-theme);
   }
 
   .theme-auto .decorated-zone::after {
     border-bottom: var(--corner-thickness) solid var(--corner-color-light-theme);
-    border-left:   var(--corner-thickness) solid var(--corner-color-light-theme);
+    border-left: var(--corner-thickness) solid var(--corner-color-light-theme);
   }
 }
-
