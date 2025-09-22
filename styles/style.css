@@ -110,9 +110,6 @@ a {
   outline-offset: 2px;
 }
 
-.images-list { 
-  grid-template-columns: 1fr; 
-}
 .gallery__item { 
   grid-column: auto; grid-row: auto; 
 }
