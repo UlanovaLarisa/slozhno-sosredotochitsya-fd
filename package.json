@@ -1,0 +1,20 @@
+{
+  "name": "slozhno-sosredotochitsya-fd",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UlanovaLarisa/slozhno-sosredotochitsya-fd.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/UlanovaLarisa/slozhno-sosredotochitsya-fd/issues"
+  },
+  "homepage": "https://github.com/UlanovaLarisa/slozhno-sosredotochitsya-fd#readme",
+  "description": ""
+}

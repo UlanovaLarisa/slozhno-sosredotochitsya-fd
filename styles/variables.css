@@ -3,10 +3,12 @@
 и их переопределение под различные устройства
 */
 :root {
-  --page-bg-image: url("../images/cover-image-light.png");
-  --page-bg-color: #cb98c6;
+  --page-bg-image: url("../images/cover-image-dark.png");
+  --color-bg-page: #000028;
   --min-block-size: 668px;
   --accent-color: #FF0070;
+  --color-title:   #DB00FF;  
+  --color-text:    #F1B2CE;
   --corner-size: 25px;
   --corner-thickness: 1px;
   --corner-color-dark-theme: var(--accent-color);
@@ -14,6 +16,8 @@
   --font-main: 'IBM Plex Mono', monospace;
   --page-pad: 10px;
   --button-color-dark-theme: #FF0070;
+  --color-card-bg: var(--accent-color);
+  --color-text-dark: #000028; 
 }
 
 @media (min-width: 768px) {

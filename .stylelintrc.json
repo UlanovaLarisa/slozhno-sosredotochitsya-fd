@@ -1,0 +1,18 @@
+{
+  "extends": "stylelint-config-standard",
+  "rules": {
+    "selector-class-pattern": "^[a-z0-9\\-]+(__[a-z0-9\\-]+)?((--|_)[a-z0-9\\-]+)?$",
+    "declaration-block-no-redundant-longhand-properties": null,
+    "media-feature-range-notation": null,
+    "no-descending-specificity": null,
+    "alpha-value-notation": null,
+    "color-function-notation": null,
+    "color-function-alias-notation": null,
+    "comment-empty-line-before": null,
+    "rule-empty-line-before": null,
+    "custom-property-empty-line-before": null,
+    "length-zero-no-unit": true,
+    "value-keyword-case": ["lower", { "ignoreKeywords": ["currentColor"] }],
+    "no-empty-source": null
+  }
+}
