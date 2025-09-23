@@ -1,39 +1,46 @@
-/*
-Специально для тёмной темы при наличии класса,
-здесь окажутся стили, которые нужно переопределить принудительно,
-переключая тему
-*/
-@media (prefers-color-scheme: dark) {
-  :root.theme-auto {
-    --page-bg-image: url("../images/cover-image-dark.png");
-    --color-bg-page: #000028;
-    --accent-color: #ff0070; /* розовый акцент, тени, уголки */
-    --color-title: #db00ff; /* крупные заголовки */
-    --color-text: #f1b2ce; /* основной текст на тёмном */
-    --color-text-dark: #000028; /* тёмный текст на розовом */
-    --color-card-bg: var(--accent-color);
-    --font-main: "IBM Plex mono", monospace;
-    --corner-color-dark-theme: var(--accent-color);
-    --button-color-dark-theme: #ff0070;
-  }
-}
-
 :root.theme-dark {
-  /* сохраните этот селектор в приведённом виде.
-  Так стили написанные ниже будут иметь больший вес,
-  чем стили в медиазапросе предпочтений пользователя
-  */
   --page-bg-image: url("../images/cover-image-dark.png");
-  /* === Цвета === */
   --color-bg-page: #000028;
   --accent-color: #ff0070; /* розовый акцент, тени, уголки */
   --color-title: #db00ff; /* крупные заголовки */
   --color-text: #f1b2ce; /* основной текст на тёмном */
   --color-text-dark: #000028; /* тёмный текст на розовом */
   --color-card-bg: var(--accent-color);
-
-  /* === Шрифт === */
   --font-main: "IBM Plex mono", monospace;
   --corner-color-dark-theme: var(--accent-color);
   --button-color-dark-theme: #ff0070;
+}
+
+.theme-dark .decoration-element {
+  display: inline-flex;
+}
+
+.theme-dark .decorated-zone::before {
+  border-top: var(--corner-thickness) solid var(--corner-color-dark-theme);
+  border-right: var(--corner-thickness) solid var(--corner-color-dark-theme);
+}
+
+.theme-dark .decorated-zone::after {
+  border-bottom: var(--corner-thickness) solid var(--corner-color-dark-theme);
+  border-left: var(--corner-thickness) solid var(--corner-color-dark-theme);
+}
+
+.theme-dark .header__theme-menu-button {
+  color: var(--button-color-dark-theme);
+}
+
+.theme-dark .header__theme-menu-button_active {
+  box-shadow: inset 0 0 0 1px var(--accent-color);
+  cursor: default;
+}
+
+.theme-dark
+  .header__theme-menu-button:hover:not(.header__theme-menu-button_active) {
+  box-shadow: inset 0 0 0 1px rgba(255, 0, 112, 0.4);
+}
+
+.theme-dark .header__theme-menu-button:focus-visible {
+  border-bottom: 1px solid var(--accent-color);
+  outline: none;
+  text-decoration: none;
 }

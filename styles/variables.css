@@ -1,7 +1,3 @@
-/*
-Переменные для вашего проекта
-и их переопределение под различные устройства
-*/
 :root {
   --page-bg-image: url("../images/cover-image-dark.png");
   --color-bg-page: #000028;
@@ -12,16 +8,10 @@
   --corner-size: 25px;
   --corner-thickness: 1px;
   --corner-color-dark-theme: var(--accent-color);
-  --rec-corner-gap: 9px;
+  --decoration-element-corner-gap: 9px;
   --font-main: "IBM Plex Mono", monospace;
   --page-pad: 10px;
   --button-color-dark-theme: #ff0070;
   --color-card-bg: var(--accent-color);
   --color-text-dark: #000028;
-}
-
-@media (min-width: 768px) {
-  :root {
-    --page-pad: 20px;
-  }
 }
