@@ -1,7 +1,7 @@
 /* === Принудительно светлая тема === */
 :root.theme-light {
   --page-bg-image: url("../images/cover-image-light.png");
-  --color-bg-page: #efb5cf; /* светлый фон */
+  --color-bg-page: #ffeef6; /* светлый фон */
   --accent-color: #ff8dcb; /* розовый акцент, тени, уголки */
   --color-title: #ffc2e6; /* крупные заголовки */
   --color-text: #353430; /* основной текст на светлом */
@@ -9,6 +9,7 @@
   --color-card-bg: var(--accent-color);
   --corner-color-light-theme: var(--color-text-dark);
   --button-color-light-theme: var(--color-text-dark);
+  --color-card-heading: #353430;
 }
 
 .theme-light .decoration-element {
@@ -34,14 +35,11 @@
     --color-card-bg: var(--accent-color);
     --corner-color-light-theme: var(--color-text-dark);
     --button-color-light-theme: var(--color-text-dark);
+    --color-card-heading: #353430;
   }
 
   .decoration-element {
     display: none;
-  }
-
-  .cards .card__heading {
-    color: var(--color-text-dark);
   }
 
   .footer__title {
@@ -72,7 +70,7 @@
   }
 
   .header__theme-menu-button:focus-visible {
-    border-bottom: 1px solid var(--accent-color);
+    border-bottom: 1px solid var(--color-text-dark);
     outline: none;
     text-decoration: none;
   }

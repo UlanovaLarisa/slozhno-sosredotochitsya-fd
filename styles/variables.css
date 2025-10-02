@@ -1,6 +1,6 @@
 :root {
   --page-bg-image: url("../images/cover-image-dark.png");
-  --color-bg-page: #000028;
+  --color-bg-page: #00012f;
   --min-block-size: 668px;
   --accent-color: #ff0070;
   --color-title: #db00ff;
@@ -14,4 +14,5 @@
   --button-color-dark-theme: #ff0070;
   --color-card-bg: var(--accent-color);
   --color-text-dark: #000028;
+  --color-card-heading: #ff0070;
 }
